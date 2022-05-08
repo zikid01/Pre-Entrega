@@ -1,0 +1,263 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Menu */
+#menu a{
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+}
+
+
+.carousel-inner{
+    max-height: 900px;
+    
+}
+
+.section-text{ 
+    max-width: 1600px;
+    width: 90%;
+    margin: auto;
+
+    text-align: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+.card{
+    padding-bottom: 0;
+}
+
+.card img{
+    max-height: 350px;
+}
+
+.card-body{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.card-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-text{
+    font-size: 1.2;
+}
+
+
+
+
+
+
+/* pagina saladas */
+
+
+
+#main-saladas{
+    background-color: rgb(27, 26, 26);
+}
+
+
+.container-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+    "salado-1 salado-2"
+    "salado-3 salado-4";
+
+}
+
+/* div 1 de la seccion salado */
+.salado-1{
+    grid-area: salado-1;
+    background-image:linear-gradient(
+        0deg,
+        rgb(0,0,0,0.7),
+        rgb(0,0,0,0.7)
+        ), url(img/empanadas.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: solid black 2px;
+    border-radius: 60px;
+}
+
+.salado-1 h3{
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.salado-1 li{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+/* div 1 de la seccion salado */
+.salado-2{
+    grid-area: salado-2;
+    background-image:linear-gradient(
+        0deg,
+        rgb(0,0,0,0.7),
+        rgb(0,0,0,0.7)
+        ), url(img/locro.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: solid black 2px;
+    border-radius: 60px;
+}
+.salado-2 h3{
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.salado-2 li{
+    font-size: 1rem;
+    font-weight: 300;
+    color: white;
+}
+
+
+
+
+
+
+/* div 1 de la seccion salado */
+.salado-3{
+    grid-area: salado-3;
+    background-image:linear-gradient(
+        0deg,
+        rgb(0,0,0,0.7),
+        rgb(0,0,0,0.7)
+        ), url(img/Milanesa.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: solid black 2px;
+    border-radius: 60px;
+}
+.salado-3 h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.salado-3 li{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+/* div 1 de la seccion salado */
+.salado-4{
+    grid-area: salado-4;
+    background-image:linear-gradient(
+        0deg,
+        rgb(0,0,0,0.7),
+        rgb(0,0,0,0.7)
+        ), url(img/pizza.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border: solid black 2px;
+    border-radius: 60px;
+}
+.salado-4 h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.salado-4 li{
+    font-size: 1rem;
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .container-grid{
+        grid-template-columns: repeat(1, 1fr);  
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+        "salado-1"
+        "salado-2"
+        "salado-3"
+        "salado-4";
+    
+    }
+
+
+    .salado-1{
+        border-radius: 10px;
+    }
+    
+    .salado-1 h3{
+        font-size: 1.2rem;
+    }
+    
+    .salado-1 li{
+        font-size: 0.8rem;
+    }
+    
+    
+    /* div 1 de la seccion salado */
+    .salado-2{
+        border-radius: 10px;
+    }
+    .salado-2 h3{
+        font-size: 1.2rem
+    }
+    .salado-2 li{
+        font-size: 0.8rem;
+    }
+    
+    
+    /* div 1 de la seccion salado */
+    .salado-3{
+        border-radius: 10px;
+    }
+    .salado-3 h3{
+        font-size: 1.2rem
+    }
+    .salado-3 li{
+        font-size: 0.8rem;
+
+    }
+    
+    /* div 1 de la seccion salado */
+    .salado-4{
+        border-radius: 10px;
+    }
+    .salado-4 h3{
+        font-size: 1.2rem
+    }
+    .salado-4 p{
+        font-size: 0.8rem;
+    }
+    
+}
